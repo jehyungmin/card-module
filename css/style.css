@@ -1,0 +1,413 @@
+.grid_veritcal{
+	height: 100%;
+	overflow: hidden;
+}
+
+.grid_item{
+	width:20%;
+}
+
+.ui_card{
+	background: #f8f9fb; 
+	border: 1px solid #d9d9d9; 
+	border-radius: 4px; 
+	box-shadow: 0 1px 3px 0 hsla(0,0%,86.3%,.3); 
+	font-size: 12px; 
+	overflow: hidden; 
+	position: relative; 
+}
+
+.imgcover{
+	overflow: hidden;
+}
+
+.card_img{
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	height: auto;
+	position: relative;
+	transition: transform .5s ease-in-out;
+	width: 100%;
+}
+
+.card_img:after{
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
+.card_img:hover{
+	transform: scale(1.08);
+}
+
+.grid_veritcal>.grid_item{
+	float: left;
+	position: relative;
+	width: 20%;
+}
+
+.inner{
+	width:1000px;
+	margin: 0 auto;
+	position: relative;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+}
+
+.card_info{
+	height: 70px;
+	padding: 8px 10px;
+}
+/*라벨 css*/
+.card_label{
+	color: #999;
+	display: block;
+	font-size: 12px;
+	height: 15px;
+	margin-bottom: 4px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 100%;
+	text-decoration: none;
+}
+
+/*타이틀 css*/
+.card_title{
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	color: #333;
+	display: block;
+	display: -webkit-box;
+	font-size: 14px;
+	height: 42px;
+	line-height: 1.5;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-decoration: none;
+}
+
+/* 별 들아간 상자 css */
+.star_rating{
+	border-top: 1px solid #d9d9d9;
+	box-sizing: border-box;
+	display: table;
+	height: 56px;
+	padding: 0 10px;
+	vertical-align: middle;
+	width: 100%;
+	margin-top: 10px;
+}
+
+/* 글 표시 css*/
+.comment{
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	color: #666;
+	display: block;
+	display: -webkit-box;
+	font-size: 12px;
+	height: 18px;
+	line-height: 1.5;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-top: 15px;
+}
+
+.price{
+	color : crimson;
+	font-size: 14px;
+	margin-left: 10px;
+}
+
+.sale{
+	color: #999;
+	text-decoration: line-through;
+
+}
+
+/*별 rating css */
+.rating{
+	transform:  translate(-40%, 50%) rotateY(180deg);
+	display: flex;
+}
+
+.rating input{
+	display: none;
+}
+
+.rating label {
+	display: block;
+	cursor: pointer;
+	width: 20px;
+}
+
+.rating label:before{
+	content:'\f005';
+	font-family: fontAwesome;
+	position: relative;
+	display: block;
+	font-size: 20px;
+	color: #d9d9d9;
+}
+
+.rating label:after{
+	content:'\f005';
+	font-family: fontAwesome;
+	position: absolute;
+	display: block;
+	font-size: 20px;
+	color: #ffc801;
+	top: 0;
+	opacity: 0;
+	transition: .5s;
+	text-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after{
+	opacity: 1;
+}
+
+
+/*별1-1 rating css */
+.rating2{
+	transform:  translate(-40%, 50%) rotateY(180deg);
+	display: flex;
+}
+
+.rating2 input{
+	display: none;
+}
+
+.rating2 label {
+	display: block;
+	cursor: pointer;
+	width: 20px;
+}
+
+.rating2 label:before{
+	content:'\f005';
+	font-family: fontAwesome;
+	position: relative;
+	display: block;
+	font-size: 20px;
+	color: #d9d9d9;
+}
+
+.rating2 label:after{
+	content:'\f005';
+	font-family: fontAwesome;
+	position: absolute;
+	display: block;
+	font-size: 20px;
+	color: #ffc801;
+	top: 0;
+	opacity: 0;
+	transition: .5s;
+	text-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+.rating2 label:hover:after,
+.rating2 label:hover ~ label:after,
+.rating2 input:checked ~ label:after{
+	opacity: 1;
+}
+
+
+/*가로상자 css*/
+.grid_horizontal{
+	height: 100%;
+	overflow: hidden;
+}
+
+.grid_horizontal>.grid_item{
+	width: 100%;
+	height: 66%;
+}
+
+.card_side .imgcover {
+   width: 43%;
+}
+
+.card_side .card_inner>* {
+   display: table-cell;
+   vertical-align: top;
+}
+
+.card_side .txtarea {
+   position: relative;
+}
+.card_inner {
+   position: relative;
+   width: 100%;
+}
+
+.card_side {
+   background: #f8f9fb;
+   border: 1px solid #d9d9d9;
+   border-radius: 4px;
+   box-shadow: 0 1px 3px 0 hsla(0,0%,86.3%,.3);
+   display: inline-block;
+   font-size: 12px;
+   overflow: hidden;
+   position: relative;
+}
+
+.card_side .card_title {
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 1;
+   display: block;
+   display: -webkit-box;
+   font-size: 14px;
+   font-weight: 700;
+   height: 21px;
+   line-height: 1.5;
+   margin: 5px 0;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+.card_side .card_info {
+   height: auto;
+   padding: 0 20px;
+}
+
+.card_side .txtarea_content {
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 4;
+   color: #666;
+   display: block;
+   display: -webkit-box;
+   font-size: 14px;
+   height: 85px;
+   line-height: 1.5;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: pre-line;
+}
+
+.card_side .star_rating {
+   border: 0;
+   bottom: 0;
+   display: initial;
+   height: auto;
+   padding: 14px 20px;
+   position: absolute;
+}
+
+.card_side .star_vcenter>* {
+   padding: 0;
+   vertical-align: baseline;
+}
+
+.ui_rating i[data-state=active] {
+   color: #ffc801;
+}
+
+/*별2 rating css */
+.rating3{
+   transform:  translate(-45%, 50%) rotateY(180deg);
+   display: flex;
+   padding-top: 15px;
+}
+
+.rating3 input{
+   display: none;
+}
+
+.rating3 label {
+   display: block;
+   cursor: pointer;
+   width: 20px;
+}
+
+.rating3 label:before{
+   content:'\f005';
+   font-family: fontAwesome;
+   position: relative;
+   display: block;
+   font-size: 20px;
+   color: #d9d9d9;
+}
+
+.rating3 label:after{
+   content:'\f005';
+   font-family: fontAwesome;
+   position: absolute;
+   display: block;
+   font-size: 20px;
+   color: #ffc801;
+   top: 0;
+   opacity: 0;
+   transition: .5s;
+   text-shadow: 0 2px 5px rgba(0,0,0,.5);
+   padding-top: 15px;
+}
+.rating3 label:hover:after,
+.rating3 label:hover ~ label:after,
+.rating3 input:checked ~ label:after{
+   opacity: 1;
+}
+
+.name {
+   margin-left: 105px;
+   color: #999;
+}
+
+.star_vcenter>.rating3{
+   padding-top: 15px;
+}
+
+/*/////////////////////////////미디어쿼리///////////////////////////////////*/
+
+@media (max-width: 719px){
+   html, body {
+      overflow-x: hidden;
+      height: auto;
+      min-height: auto;
+  }
+}
+
+@media (max-width: 719px){
+   .content {
+      position: relative;
+      margin-top: -42px;
+      z-index: 150;
+      padding-bottom: 32px;
+  }
+}
+
+@media (max-width: 719px){
+   .inner, .inner800 {
+      width: 100%;
+      padding: 0 12px;
+  }
+}
+
+@media (max-width: 719px){
+   .grid_veritcal>.grid_item{
+      width: 50%;
+  }
+}
+
+@media (max-width: 719px){
+   .grid_horizontal{
+      height: 50%; 
+      overflow: visible;   	
+  }
+}
+
+@media( max-width: 719px){
+    .rating, .rating2, .rating3{
+        transform:  translate(-40%, 50%) rotateY(180deg);
+    }
+}
+
+
+
+
